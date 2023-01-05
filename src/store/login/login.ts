@@ -31,7 +31,9 @@ const useLoginStore = defineStore('login', {
       const { data: userInfoResult } = await getUserById(id)
       this.userInfo = userInfoResult
       // 获取角色权限
-      const { data: userMenusResult } = await getRoleMenus(id)
+      const { data: userMenusResult } = await getRoleMenus(
+        userInfoResult.role.id
+      )
       this.userMenus = userMenusResult
       // 获取登录用户所有按钮权限
       const permissions = mapMenusToPermissions(userMenusResult)

@@ -49,7 +49,7 @@ const modalConfigRef = computed(() => {
   let formItem = modalConfig.formItem.find((item: any) => {
     return item.prop === 'roleId'
   })
-  formItem.options.push(...options)
+  formItem.options = options
   // 添加部门列表
   options = entireDepartments.value.map((item) => {
     return { label: item.name, value: item.id }
@@ -57,7 +57,7 @@ const modalConfigRef = computed(() => {
   formItem = modalConfig.formItem.find((item: any) => {
     return item.prop === 'departmentId'
   })
-  formItem.options.push(...options)
+  formItem.options = options
   return modalConfig
 })
 </script>

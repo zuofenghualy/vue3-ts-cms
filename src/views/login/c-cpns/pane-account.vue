@@ -73,7 +73,8 @@ function loginAction(isRememberPwd: boolean) {
             localCache.removeCache('password')
           }
         })
-        .catch(() => {
+        .catch((message) => {
+          console.log(message)
           ElMessage.error('登录失败')
         })
     } else {

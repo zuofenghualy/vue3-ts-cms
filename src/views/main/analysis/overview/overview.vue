@@ -1,13 +1,17 @@
 <template>
   <div class="overview">
-    <h2>overview</h2>
+    <about />
+    <structure />
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import about from './c-cpns/about/about.vue'
+import structure from './c-cpns/structure/structure.vue'
+</script>
 
 <style lang="less" scoped>
-.overview {
-  color: red;
+.structure {
+  margin-top: 20px;
 }
 </style>
