@@ -18,14 +18,17 @@
     "echarts": "^5.4.1",
     "element-plus": "^2.2.25",
     "highlight.js": "^11.7.0",
+    "marked": "^4.2.5",
     "normalize.css": "^8.0.1",
     "pinia": "^2.0.24",
+    "vite-plugin-markdown": "^2.1.0",
     "vue": "^3.2.38",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",
-    "@types/node": "^16.11.56",
+    "@types/markdown-it": "^12.2.3",
+    "@types/node": "^16.18.3",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^11.0.0",
