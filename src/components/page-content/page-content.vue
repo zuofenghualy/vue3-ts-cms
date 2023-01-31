@@ -167,7 +167,10 @@ function handleCurrentChange() {
 
 // 定义函数，用于发送网络请求
 function fetchPageListData(searchForm: any = {}) {
-  if (!isQuery) return
+  if (!isQuery) {
+    pageList.value = []
+    return
+  }
   const size = pageSize.value
   const offset = (currentPage.value - 1) * size
   const queryInfo = { size, offset, ...searchForm }
