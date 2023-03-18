@@ -2,7 +2,7 @@ import axios from 'axios'
 import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios'
 
 interface HYInstanceInterceptors<T = AxiosResponse> {
-  requestInterceptor?: (config: AxiosRequestConfig) => AxiosRequestConfig
+  requestInterceptor?: (config: any) => any
   requestInterceptorCatch?: (err: any) => any
   responseInterceptor?: (res: T) => T
   responseInterceptorCatch?: (err: any) => any

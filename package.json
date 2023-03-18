@@ -21,6 +21,7 @@
     "marked": "^4.2.5",
     "normalize.css": "^8.0.1",
     "pinia": "^2.0.24",
+    "pnpm": "^7.29.2",
     "vite-plugin-markdown": "^2.1.0",
     "vue": "^3.2.38",
     "vue-router": "^4.1.6"
